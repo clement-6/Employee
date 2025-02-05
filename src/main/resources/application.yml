@@ -1,0 +1,19 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: EMPLOYEE-MANAGEMENT
+  jpa:
+    show-sql: true
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/employeemanagement
+    username: troc
+    password: 123
+  main:
+    allow-circular-references: true
